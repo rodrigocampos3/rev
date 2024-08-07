@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         <div className="w-full flex flex-col md:flex-row md:p-10">
           <div className="w-full md:w-1/2 md:px-10 text-center md:text-left py-3">
-            <h1 className="text-[#EB591E] text-2xl font-bold ">Nossos números</h1>
+            <h1 className="text-[#EB591E] text-5xl font-bold ">Nossos números</h1>
             <p className="text-black">Confira os resultados alcançados na última edição do ConstruFavela:</p>
           </div>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 w-full md:w-1/2">

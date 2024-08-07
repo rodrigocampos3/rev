@@ -11,7 +11,7 @@ import img4 from '../../../public/DSC03311.jpg';
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [img0, img1, img2, img3, img4];
-  const visibleImages = 3; // Quantidade de imagens visíveis ao mesmo tempo
+  const visibleImages = 5; // Quantidade de imagens visíveis ao mesmo tempo
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -22,7 +22,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative h-1/2 overflow-hidden">
       <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{
