@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <div className="w-full flex flex-col gap-2 md:gap-5 md:p-10 order-2 md:order-1">
           <h1 className="text-3xl md:text-5xl font-bold text-center text-[#EB591E] md:text-left">Explore Oportunidades e Impacto Social em Nossa Comunidade</h1>
-          <p className="text-center md:text-left px-2 text-black">aisfhaof soaifhaoisfa fiahsfioaf aoisfoaifoai iefowf aoishfoaifs asoifaosfabfoiasfuo asfgoauf asufgaofbgao faogsfuoab augfaof ausgfaobsfugoa fsagusofasf guoasf</p>
+          <p className="text-center md:text-left px-2 text-black">Na nossa comunidade, acreditamos no poder da união e da colaboração para transformar realidades. Nossa missão é promover iniciativas que criem oportunidades e gerem impacto positivo, fortalecendo os laços comunitários e impulsionando o desenvolvimento social e econômico.f</p>
           <div className="w-full py-4 md:py-10 px-5">
             <button className="bg-[#EB591E] text-xl text-white rounded-md w-full md:w-1/3 p-2">Saiba mais</button>
           </div>
