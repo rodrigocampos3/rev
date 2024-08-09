@@ -12,6 +12,11 @@ import img6 from '../../../public/DSC03307.jpg';
 import img8 from '../../../public/DSC03290.jpg';
 import img11 from '../../../public/DSC03271.jpg';
 import img5 from '../../../public/DSC03243.jpg';
+import img22 from "../../../public/img22.jpg"
+import img23 from "../../../public/img23.jpg"
+import img21 from "../../../public/img21.jpg"
+
+
 
 
 
@@ -20,7 +25,7 @@ import img5 from '../../../public/DSC03243.jpg';
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [img0, img1, img2, img3, img4, img5, ];
+  const images = [ img1, img2, img3, img4, img5, img21, img22, ];
   const visibleImages = 5; // Quantidade de imagens visíveis ao mesmo tempo
 
   useEffect(() => {

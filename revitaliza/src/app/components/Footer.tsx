@@ -18,16 +18,16 @@ function Footer() {
 
         {/* Redes Sociais */}
         <div className="flex space-x-6 mb-4 md:mb-0">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/revitalizacomunidades/" target="_blank" rel="noopener noreferrer">
             <FaFacebook size={30} />
           </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/revitalizacomunidades/" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={30} />
           </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/revitalizacomunidades/" target="_blank" rel="noopener noreferrer">
             <FaTwitter size={30} />
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/revitalizacomunidades/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={30} />
           </a>
         </div>
@@ -35,7 +35,7 @@ function Footer() {
         {/* Contato */}
         <div className="text-center md:text-left">
           <p>Contato: contato@example.com</p>
-          <p>Telefone: (11) 1234-5678</p>
+          <p>Telefone: (11) 962696366</p>
         </div>
       </div>
     </footer>

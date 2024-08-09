@@ -17,7 +17,7 @@ import gerdau from "../../public/gerdau1.png"
 
 export default function Home() {
   return (
-    <main className="w-screen h-screen bg-white">
+    <main className="w-full max-w-screen h-screen bg-white">
       <NavBar />
       <div className="min-w-full bg-white flex flex-col md:flex-row md:p-20" id="container-1">
         <div className="md:w-2/3 order-1 md:order-2">
@@ -42,8 +42,8 @@ export default function Home() {
             O objetivo é fortalecer e capacitar os moradores das comunidades, proporcionando impacto positivo e desenvolvimento local.</p>
           <button className="bg-[#EB591E] text-xl text-white rounded-md md:w-1/3 p-2"><a href="https://www.sympla.com.br/evento/construfavela-2024-feira-de-construcao-civil/2562197?referrer=www.google.com">Inscreva-se</a></button>
         </div>
-        <div className="flex flex-col w-full items-center py-10">
-          <h2 className="text-3xl text-[#EB591E] font-bold py-3 h-full">Edições Anteriores</h2>
+        <div className="flex flex-col w-full md:h-1/2 items-center py-10">
+          <h2 className="text-3xl text-[#EB591E] font-bold py-3">Edições Anteriores</h2>
           <Carousel />
         </div>
         <div className="w-full flex flex-col md:flex-row md:p-10">
