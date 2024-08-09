@@ -34,8 +34,8 @@ function Footer() {
 
         {/* Contato */}
         <div className="text-center md:text-left">
-          <p>Contato: contato@example.com</p>
-          <p>Telefone: (11) 962696366</p>
+          <p>Contato: Revitalizacomunidades@gmail.com</p>
+          <p>Telefone: (11) 95711-0832</p>
         </div>
       </div>
     </footer>

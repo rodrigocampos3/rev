@@ -79,8 +79,20 @@ export default function Home() {
                 <h3 className="text-3xl font-bold text-[#EB591E] ">145</h3>
                 <p className="text-black">pessoas assistiram aos workshops</p>
               </div>
+              
             </div>
+            <div className="flex items-center justify-center border p-4 bg-gray-200 flex-col md:flex-row rounded-md">
+              <div className="md:w-1/3 pt-2">
+                <Image src={img} alt="teste" />
+              </div>
+              <div className="w-full md:w-2/3 items-center text-center flex flex-col">
+                <h3 className="text-3xl font-bold text-[#EB591E] ">+30</h3>
+                <p className="text-black">Expositores</p>
+              </div>
+            </div>
+
           </div>
+          
         </div>
         <div className="flex flex-col w-full rounded-xl shadow-xl text-center text-4xl font-bold p-10 text-[#EB591E]">
           <h3>Nossos Parceiros</h3>
