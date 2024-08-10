@@ -13,23 +13,31 @@ import { FaWhatsapp } from "react-icons/fa";
 import Partners from "./components/Partners";
 import capa1 from "../../public/capa1.png"
 import gerdau from "../../public/gerdau1.png"
+import coral from "../../public/coral.jpg"
+import quartzolit from "../../public/quartzolit.jpg"
+import votoran from "../../public/votoran.jpg"
+import tramontina from "../../public/tramontina.jpg"
+import midia from "../../public/midia.png"
+
+
+
 
 
 export default function Home() {
   return (
     <main className="w-full max-w-screen h-screen bg-white">
       <NavBar />
-      <div className="min-w-full bg-white flex flex-col md:flex-row md:p-20" id="container-1">
-        <div className="md:w-2/3 order-1 md:order-2">
+      <div className="min-w-full bg-white flex flex-col md:flex-col md:p-20" id="container-1">
+        <div className="md:w-full order-1 md:order-2">
           <Image src={capa1} alt="Constru Favela" className="object-cover rounded-2xl" />
         </div>
-        <div className="w-full md:w-1/3 flex flex-col gap-2 md:gap-5 md:text-center md:p-10 order-2 py-2 md:order-1 justify-center">
+        {/* <div className="w-full md:w-1/3 flex flex-col gap-2 md:gap-5 md:text-center md:p-10 order-2 py-2 md:order-1 justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-center text-[#EB591E]">Explore Oportunidades e Impacto Social em Nossa Comunidade</h1>
           <p className="text-center px-2 text-black">Na nossa comunidade, acreditamos no poder da união e da colaboração para transformar realidades. Nossa missão é promover iniciativas que criem oportunidades e gerem impacto positivo, fortalecendo os laços comunitários e impulsionando o desenvolvimento social e econômico.f</p>
           <div className="w-full py-4 md:py-10 px-5">
             <button className="bg-[#EB591E] text-xl text-white rounded-md w-full md:w-1/3 p-2"> <a href="#container-2 w-full">Saiba mais</a></button>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="min-w-full min-h-screen bg-white flex flex-col p-5 md:p-20" id="container-2">
@@ -38,13 +46,41 @@ export default function Home() {
             <span className="text-[#0247AB]">Constru</span>
             <span className="text-[#EB591E]">Favela</span>
           </h1>
-          <p className="text-black md:px-10">A ConstruFavela 2024 é um evento dedicado à construção civil nas comunidades, que ocorrerá nos dias 24 e 25 de outubro no Pavilhão Social do G10 Favelas, em Paraisópolis, São Paulo. O evento oferece uma oportunidade única para se conectar com um público de alto potencial econômico, com um mercado estimado em 167 bilhões de reais. Além de fomentar o crescimento profissional através de um curso gratuito de Técnicas Básicas da Construção Civil, a ConstruFavela promove networking com especialistas e expositores renomados.
-            O objetivo é fortalecer e capacitar os moradores das comunidades, proporcionando impacto positivo e desenvolvimento local.</p>
+          <p className="text-black md:px-10 md:text-xl">A Construfavela é o maior evento de construção civil das favelas do Brasil, reunindo as principais empresas do setor com o propósito não apenas de exibir seus produtos, mas também de oferecer capacitação profissional, oportunidades de networking e a criação de novas conexões. Este evento desempenha um papel fundamental para fomentar o desenvolvimento econômico e a qualificação da mão de obra local, promovendo uma transformação positiva nas comunidades das favelas, ao mesmo tempo em que fortalece a indústria da construção civil no país.
+          </p>
           <button className="bg-[#EB591E] text-xl text-white rounded-md md:w-1/3 p-2"><a href="https://www.sympla.com.br/evento/construfavela-2024-feira-de-construcao-civil/2562197?referrer=www.google.com">Inscreva-se</a></button>
         </div>
+        <div className="flex flex-col items-center">
+  <p className="text-3xl text-[#EB591E] font-bold py-3 text-center">Alguns expositores dos anos anteriores</p>
+  <div className="flex flex-col md:flex-row justify-center gap-6 w-full">
+    <div className="flex flex-col items-center">
+      <Image src={coral} alt="Expositor 1" className="w-full  h-auto rounded-lg" />
+      <h3 className="mt-2 text-2xl font-medium">Coral</h3>
+    </div>
+    <div className="flex flex-col items-center">
+      <Image src={quartzolit} alt="Expositor 2" className="w-full h-auto rounded-lg" />
+      <h3 className="mt-2 text-2xl font-medium">Quartzolit 2</h3>
+    </div>
+    <div className="flex flex-col items-center">
+      <Image src={votoran} alt="Expositor 3" className="w-full h-auto rounded-lg" />
+      <h3 className="mt-2 text-2xl font-medium">Votoran</h3>
+    </div>
+    <div className="flex flex-col items-center">
+      <Image src={tramontina} alt="Expositor 4" className="w-full h-auto rounded-lg" />
+      <h3 className="mt-2 text-2xl font-medium">Tramontina</h3>
+    </div>
+  </div>
+</div>
+
+
         <div className="flex flex-col w-full md:h-1/2 items-center py-10">
           <h2 className="text-3xl text-[#EB591E] font-bold py-3">Edições Anteriores</h2>
           <Carousel />
+        </div>
+        <div className="w-full md:p-10">
+        <Image src={midia} alt="Materias" className="w-full h-auto rounded-lg" />
+
+
         </div>
         <div className="w-full flex flex-col md:flex-row md:p-10">
           <div className="w-full md:w-1/2 md:px-10 text-center md:text-left py-3">
