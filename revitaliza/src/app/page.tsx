@@ -71,7 +71,7 @@ export default function Home() {
       <h3 className="mt-2 text-2xl font-medium">Tramontina</h3>
     </div>
           </div>
-          <button className="w-2/3 bg-[#EB591E] rounded-xl text-3xl text-white font-bold py-3 text-center"> <a href="https://wa.me/5511962696366">Exponha na maior feira de construção brasil</a></button>
+          <button className="w-2/3 bg-[#EB591E] rounded-xl text-3xl text-white font-bold py-3 text-center"> <a href="https://wa.me/5511962696366">Exponha na maior feira de construção civil das favelas do Brasil</a></button>
 </div>
 
 
