@@ -30,6 +30,7 @@ export default function Home() {
       <div className="min-w-full bg-white flex flex-col md:flex-col md:p-20" id="container-1">
         <div className="md:w-full order-1 md:order-2">
           <Image src={capa1} alt="Constru Favela" className="object-cover rounded-2xl" />
+          {/* <button className="w-2/3"> Exponha na maior feira de construção do brasil</button> */}
         </div>
         {/* <div className="w-full md:w-1/3 flex flex-col gap-2 md:gap-5 md:text-center md:p-10 order-2 py-2 md:order-1 justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-center text-[#EB591E]">Explore Oportunidades e Impacto Social em Nossa Comunidade</h1>
@@ -50,7 +51,7 @@ export default function Home() {
           </p>
           <button className="bg-[#EB591E] text-xl text-white rounded-md md:w-1/3 p-2"><a href="https://www.sympla.com.br/evento/construfavela-2024-feira-de-construcao-civil/2562197?referrer=www.google.com">Inscreva-se</a></button>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center gap-5">
   <p className="text-3xl text-[#EB591E] font-bold py-3 text-center">Alguns expositores dos anos anteriores</p>
   <div className="flex flex-col md:flex-row justify-center gap-6 w-full">
     <div className="flex flex-col items-center">
@@ -59,17 +60,18 @@ export default function Home() {
     </div>
     <div className="flex flex-col items-center">
       <Image src={quartzolit} alt="Expositor 2" className="w-full h-auto rounded-lg" />
-      <h3 className="mt-2 text-2xl font-medium">Quartzolit 2</h3>
+      <h3 className="mt-2 text-2xl font-medium">Quartzolit</h3>
     </div>
     <div className="flex flex-col items-center">
       <Image src={votoran} alt="Expositor 3" className="w-full h-auto rounded-lg" />
-      <h3 className="mt-2 text-2xl font-medium">Votoran</h3>
+      <h3 className="mt-2 text-2xl font-medium">Votorantim</h3>
     </div>
     <div className="flex flex-col items-center">
       <Image src={tramontina} alt="Expositor 4" className="w-full h-auto rounded-lg" />
       <h3 className="mt-2 text-2xl font-medium">Tramontina</h3>
     </div>
-  </div>
+          </div>
+          <button className="w-2/3 bg-[#EB591E] rounded-xl text-3xl text-white font-bold py-3 text-center"> <a href="https://wa.me/5511962696366">Exponha na maior feira de construção brasil</a></button>
 </div>
 
 
@@ -79,8 +81,6 @@ export default function Home() {
         </div>
         <div className="w-full md:p-10">
         <Image src={midia} alt="Materias" className="w-full h-auto rounded-lg" />
-
-
         </div>
         <div className="w-full flex flex-col md:flex-row md:p-10">
           <div className="w-full md:w-1/2 md:px-10 text-center md:text-left py-3">
