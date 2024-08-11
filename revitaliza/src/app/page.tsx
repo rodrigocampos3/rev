@@ -3,6 +3,8 @@ import NavBar from "@/app/components/Nav";
 import Image from 'next/image';
 import capa from '../../public/capa.jpg';
 import Carousel from "@/app/components/Carrousel"
+import Carousel2 from "@/app/components/Carrousel2"
+
 import img from "../../public/icon.svg"
 import Logo from "../../public/logo.png"
 import Carlos from "../../public/carlos.jpg"
@@ -75,10 +77,16 @@ export default function Home() {
 </div>
 
 
-        <div className="flex flex-col w-full md:h-1/2 items-center py-10">
-          <h2 className="text-3xl text-[#EB591E] font-bold py-3">Edições Anteriores</h2>
-          <Carousel />
-        </div>
+<div className="flex flex-col md:hidden h-full w-full md:h-1/2 items-center py-10">
+        <h2 className="text-3xl text-[#EB591E] font-bold py-3 ">Edições Anteriores</h2>
+        <Carousel2 />
+      </div>
+      
+      {/* Carrossel para Desktop */}
+      <div className="hidden md:flex flex-col w-full md:h-1/2 items-center py-10">
+        <h2 className="text-3xl text-[#EB591E] font-bold py-3">Edições Anteriores</h2>
+        <Carousel />
+      </div>
         <div className="w-full md:p-10">
         <Image src={midia} alt="Materias" className="w-full h-auto rounded-lg" />
         </div>
