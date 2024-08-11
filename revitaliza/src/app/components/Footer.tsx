@@ -38,8 +38,12 @@ function Footer() {
           <p>Telefone: (11) 95711-0832</p>
         </div>
       </div>
+      <div className="text-center md:text-left">
+        <p>Local: Pavilhão social G10 Favelas 
+        Rua Itamotinga n 100 paraíso do Morumbi cep 05706-320</p>
+        </div>
     </footer>
-  );
+  );        
 }
 
 export default Footer;
