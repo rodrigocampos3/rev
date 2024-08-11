@@ -41,7 +41,7 @@ export default function Home() {
       </div>
 
       <div className="min-w-full min-h-screen bg-white flex flex-col p-5 md:p-20" id="container-2">
-        <div className="flex flex-col w-full  text-center gap-y-5 md:px-20 items-center py-10 rounded-md shadow-xl md:p-10">
+        <div className="flex flex-col w-full  text-center gap-y-5 md:px-20 items-center py-10 rounded-md shadow-xl md:p-10" id="construfavela">
           <h1 className="md:text-7xl text-5xl font-bold">
             <span className="text-[#0247AB]">Constru</span>
             <span className="text-[#EB591E]">Favela</span>
