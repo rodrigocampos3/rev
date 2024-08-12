@@ -2,20 +2,20 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import img1 from '../../../public/DSC02915.jpg';
-import img2 from '../../../public/DSC03066.jpg';
-import img3 from '../../../public/DSC03311.jpg';
-import img4 from '../../../public/DSC03341.jpg';
-import img5 from '../../../public/DSC03243.jpg';
-import img21 from '../../../public/img21.jpg';
-import img22 from '../../../public/img22.jpg';
-import img23 from '../../../public/img23.jpg';
-import first from '../../../public/first.jpg';
-
+import img1 from '../../../public/carrousel/1.jpg';
+import img2 from '../../../public/carrousel/10.jpg';
+import img3 from '../../../public/carrousel/3.jpg';
+import img4 from '../../../public/carrousel/4.jpg';
+import img5 from '../../../public/carrousel/5.jpg';
+import img21 from '../../../public/carrousel/6.jpg';
+import img22 from '../../../public/carrousel/7.jpg';
+import img24 from '../../../public/carrousel/10.jpg';
+import img25 from '../../../public/carrousel/11.jpg';
+import img26 from '../../../public/carrousel/12.jpg';
 
 const Carousel2 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [img1, img2, first, img3, img4, img5, img21, img22, img23];
+  const images = [img1, img2, img24, img25, img26, img3, img4, img5, img21, img22];
 
   const handleNext = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
