@@ -17,6 +17,7 @@ const Carousel2 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [img1, img2, img24, img25, img26, img3, img4, img5, img21, img22];
 
+  
   const handleNext = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   }, [images.length]);

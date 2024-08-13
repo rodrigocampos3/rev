@@ -24,7 +24,6 @@ import midia from "../../public/midia.png"
 
 
 
-
 export default function Home() {
   return (
     <main className="w-full max-w-screen h-screen bg-white">
@@ -143,6 +142,23 @@ export default function Home() {
           <Partners />
         </div>
       </div>
+      <div className="w-full flex flex-col h-full justify-around p-5 bg-white">
+  <h2 className="font-bold  text-center mb-4 text-4xl text-[#EB591E]">Jornal Hoje</h2>
+  <div className="flex justify-center h-full">
+    <iframe 
+      width="100% md:50%" 
+      height="md:100%" 
+      src="https://www.youtube.com/embed/n2b1vb2cuuQ?si=DRDBT3UKjdg1_3mn&t=329" 
+      title="YouTube video player" 
+      frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerPolicy="strict-origin-when-cross-origin" 
+      allowFullScreen>
+    </iframe>
+  </div>
+</div>
+
+
       <div className="w-full flex flex-col md:flex-row md:px-20 bg-white py-10">
         <div className="md:w-1/2 md:p-10 gap-10 order-last md:text-left text-center md:order-first p-5">
           <h3 className="text-4xl  font-bold text-[#EB591E]">Nosso Fundador</h3>
