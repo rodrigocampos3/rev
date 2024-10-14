@@ -14,7 +14,7 @@ import Carlos2 from "../../public/carlos2.jpg"
 import Footer from "./components/Footer";
 import { FaWhatsapp } from "react-icons/fa";
 import Partners from "./components/Partners";
-import capa1 from "../../public/capa1.png"
+import capa1 from "../../public/C2024.png"
 import gerdau from "../../public/gerdau1.png"
 import coral from "../../public/coral.jpg"
 import quartzolit from "../../public/quartzolit.jpg"
