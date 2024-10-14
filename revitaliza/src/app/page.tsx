@@ -1,11 +1,14 @@
+'use client';
+
 // pages/index.js
+
+
 import NavBar from "@/app/components/Nav";
 import Image from 'next/image';
 import capa from '../../public/capa.jpg';
 import Carousel from "@/app/components/Carrousel"
 import Carousel2 from "@/app/components/Carrousel2"
 import { Analytics } from "@vercel/analytics/react"
-
 import img from "../../public/icon.svg"
 import Logo from "../../public/logo.png"
 import Carlos from "../../public/carlos.jpg"
@@ -21,17 +24,41 @@ import quartzolit from "../../public/quartzolit.jpg"
 import votoran from "../../public/votoran.jpg"
 import tramontina from "../../public/tramontina.jpg"
 import midia from "../../public/midia.png"
+import NewCap from "../../public/newCapa.jpg"
 
 
+import { useEffect, useState } from 'react';
 
 
 export default function Home() {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detecta se o dispositivo é mobile (por exemplo, menos de 768px de largura)
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Chama a função no primeiro render
+    handleResize();
+
+    // Adiciona um listener para detectar mudanças no tamanho da janela
+    window.addEventListener('resize', handleResize);
+
+    // Remove o listener quando o componente for desmontado
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <main className="w-full max-w-screen h-screen bg-white">
       <NavBar />
       <div className="min-w-full bg-white flex flex-col md:flex-col md:p-20" id="container-1">
         <div className="md:w-full order-1 md:order-2">
-          <Image src={capa1} alt="Constru Favela" className="object-cover rounded-2xl" />
+        {isMobile ? (
+        <Image src={NewCap} alt="NewCap" className="object-cover rounded-2xl" />
+      ) : (
+        <Image src={capa1} alt="Constru Favela" className="object-cover rounded-2xl" />
+      )}
           {/* <button className="w-2/3"> Exponha na maior feira de construção do brasil</button> */}
         </div>
         {/* <div className="w-full md:w-1/3 flex flex-col gap-2 md:gap-5 md:text-center md:p-10 order-2 py-2 md:order-1 justify-center">
