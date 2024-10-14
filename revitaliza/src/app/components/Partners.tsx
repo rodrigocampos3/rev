@@ -28,7 +28,7 @@ function Partners() {
   return (
     <div className="py-10 text-center">
       {/* Seção de Apoios */}
-      <div className="mb-10">
+      <div className="mb-10 bg-white">
         <h2 className="text-3xl font-semibold mb-6">Apoio</h2>
         <div className="flex justify-center items-center gap-6 flex-wrap">
           <div className="flex-shrink-0 text-center">

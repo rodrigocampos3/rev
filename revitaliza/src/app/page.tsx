@@ -42,7 +42,7 @@ export default function Home() {
           </div>
         </div> */}
       </div>
-      <div className="flex flex-col w-full bg-whi rounded-xl shadow-xl text-center text-4xl font-bold p-10 text-[#EB591E]">
+      <div className="flex flex-col bg-white w-full bg-whi rounded-xl shadow-xl text-center text-4xl font-bold p-10 text-[#EB591E]">
           <h3>Nossos Parceiros</h3>
           <Partners />
         </div>
