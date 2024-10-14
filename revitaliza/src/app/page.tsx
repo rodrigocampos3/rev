@@ -4,6 +4,7 @@ import Image from 'next/image';
 import capa from '../../public/capa.jpg';
 import Carousel from "@/app/components/Carrousel"
 import Carousel2 from "@/app/components/Carrousel2"
+import { Analytics } from "@vercel/analytics/react"
 
 import img from "../../public/icon.svg"
 import Logo from "../../public/logo.png"
@@ -41,6 +42,10 @@ export default function Home() {
           </div>
         </div> */}
       </div>
+      <div className="flex flex-col w-full bg-whi rounded-xl shadow-xl text-center text-4xl font-bold p-10 text-[#EB591E]">
+          <h3>Nossos Parceiros</h3>
+          <Partners />
+        </div>
 
       <div className="min-w-full min-h-screen bg-white flex flex-col p-5 md:p-20" id="container-2">
         <div className="flex flex-col w-full  text-center gap-y-5 md:px-20 items-center py-10 rounded-md shadow-xl md:p-10" id="construfavela">
@@ -137,10 +142,7 @@ export default function Home() {
           </div>
           
         </div>
-        <div className="flex flex-col w-full rounded-xl shadow-xl text-center text-4xl font-bold p-10 text-[#EB591E]">
-          <h3>Nossos Parceiros</h3>
-          <Partners />
-        </div>
+  
       </div>
 
       <div className="w-full flex flex-col md:flex-row md:px-20 bg-white py-10">

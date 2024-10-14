@@ -35,7 +35,7 @@ function Footer() {
         {/* Contato */}
         <div className="text-center md:text-left">
           <p>Contato: Revitalizacomunidades@gmail.com</p>
-          <p>Telefone: (11) 95711-0832</p>
+          <p>Telefone: (11) 9 6269-6366</p>
         </div>
       </div>
       <div className="text-center md:text-left">
