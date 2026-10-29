@@ -57,7 +57,7 @@ const Carousel2 = () => {
               layout="responsive"
               width={220}
               height={100}
-              className="w-full h-full"
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
         ))}

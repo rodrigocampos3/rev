@@ -1,49 +1,37 @@
-import Link from 'next/link';
 import Image from 'next/image';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
-import logo from '../../../public/logo.png'; // Substitua pelo caminho do seu logo
+import { FaInstagram, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import logo from "../../../public/sponsors/_logo.png";
 
-function Footer() {
+const sites = [
+  ['https://cores.construfavela.com.br', 'Cores da Favela'],
+  ['https://institutorevitaliza.construfavela.com.br', 'Instituto Revitaliza'],
+  ['https://revitaliza.construfavela.com.br', 'Revitaliza'],
+];
+
+export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-10">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-{/*         
-        <div className="flex items-center mb-4 md:mb-0">
-          <Link href="/" legacyBehavior>
-            <a>
-              <Image src={logo} alt="Logo" width={150} height={50} />
-            </a>
-          </Link>
-        </div> */}
-
-        {/* Redes Sociais */}
-        <div className="flex space-x-6 mb-4 md:mb-0">
-          <a href="https://www.instagram.com/revitalizacomunidades/" target="_blank" rel="noopener noreferrer">
-            <FaFacebook size={30} />
-          </a>
-          <a href="https://www.instagram.com/revitalizacomunidades/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram size={30} />
-          </a>
-          <a href="https://www.instagram.com/revitalizacomunidades/" target="_blank" rel="noopener noreferrer">
-            <FaTwitter size={30} />
-          </a>
-          <a href="https://www.instagram.com/revitalizacomunidades/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={30} />
+    <footer id="contato" className="bg-black border-t border-gold/20 py-12 px-6">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 items-start">
+        <div className="flex flex-col gap-4 items-center md:items-start">
+          <Image src={logo} alt="ConstruFavela 2026" className="h-16 w-auto" />
+          <a href="https://www.instagram.com/revitalizacomunidades/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gold hover:text-gold-light">
+            <FaInstagram size={28} />
           </a>
         </div>
-
-        {/* Contato */}
-        <div className="text-center md:text-left">
-          <p>Contato: Revitalizacomunidades@gmail.com</p>
-          <p>Telefone: (11) 9 6269-6366</p>
+        <div className="text-center md:text-left text-gray-400 space-y-2">
+          <p className="font-display text-gold text-xl tracking-wide">Contato</p>
+          <p className="flex items-center gap-2 justify-center md:justify-start"><FaEnvelope className="text-gold shrink-0" /> Revitalizacomunidades@gmail.com</p>
+          <p className="flex items-center gap-2 justify-center md:justify-start"><FaWhatsapp className="text-gold shrink-0" /> (11) 9 6269-6366</p>
+          <p className="flex items-start gap-2 justify-center md:justify-start"><FaMapMarkerAlt className="text-gold shrink-0 mt-1" /> <span>Pavilhão Social G10 Favelas<br />Rua Itamotinga, 100 — Paraíso do Morumbi<br />CEP 05706-320, São Paulo</span></p>
+        </div>
+        <div className="text-center md:text-left space-y-2">
+          <p className="font-display text-gold text-xl tracking-wide">Nossos sites</p>
+          {sites.map(([href, label]) => (
+            <a key={href} href={href} className="block text-gray-400 hover:text-gold transition">{label}</a>
+          ))}
         </div>
       </div>
-      <div className="text-center md:text-left">
-        <p>Local: Pavilhão social G10 Favelas 
-        Rua Itamotinga n 100 paraíso do Morumbi cep 05706-320</p>
-        </div>
+      <p className="text-center text-gray-600 text-sm mt-10">© 2026 ConstruFavela · Instituto Revitaliza Comunidade</p>
     </footer>
-  );        
+  );
 }
-
-export default Footer;

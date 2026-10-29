@@ -78,7 +78,7 @@ import img26 from '../../../public/carrousel/12.jpg';
                 <Image
                   src={image}
                   alt={`Slide ${index}`}
-                  className="rounded-2xl border border-[#EB591E] h-full object-cover"
+                  className="rounded-2xl border border-gold/40 h-full object-cover"
                 />
               </div>
             </div>
